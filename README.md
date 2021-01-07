@@ -47,6 +47,11 @@ ls --sort=size -lh
 find . -name '*.txt' -exec mv '{}' /drive/images/ \;
 ```
 
+## Compress video
+```
+ ffmpeg -i foo.avi -vcodec h264 -an foo.mp4
+```
+
 # Docker Helper
 
 ## apt-get
