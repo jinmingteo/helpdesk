@@ -1,9 +1,9 @@
 # Directory
-## [Git Helper](#git-helper)
+## [Git HelpDesk](#git-helper)
 
-## [Linux Helper](#linux-helper)
+## [Linux HelpDesk](#linux-helper)
 
-## [Docker Helper](#docker-helper)
+## [Docker HelpDesk](#docker-helper)
 
 # Git Helper
 
