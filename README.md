@@ -33,6 +33,12 @@ git remote -v
 git remote set-url origin <forked_repo>
 ```
 
+## Fetch a remote PR into your local repo
+```
+git fetch origin pull/ID/head:BRANCHNAME
+git checkout BRANCHNAME
+```
+
 # Linux Helper
 
 ## Sort file size
