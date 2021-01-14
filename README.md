@@ -66,8 +66,36 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
    make
 ```
 
-## X / QT display
+## X / QT display issue
 
 ```
  xhost +local:docker && docker run --rm -e "DISPLAY=${DISPLAY}" -v "/tmp/.X11-unix:/tmp/.X11-unix:rw" <repo>
 ```
+
+## No 'rights' to docker images / Permission Issues
+
+- Dockerfile to receive arguments, and creates a new user called “user” (put at end of Dockerfile)
+```
+ARG USER_ID
+ARG GROUP_ID
+
+RUN addgroup --gid $GROUP_ID user
+RUN adduser --disabled-password --gecos '' --uid $USER_ID --gid $GROUP_ID user
+USER user
+```
+
+- Build with args
+```
+docker build -t myimage \
+  --build-arg USER_ID=$(id -u) \
+  --build-arg GROUP_ID=$(id -g) .
+```
+
+- Run Docker w explicit user id and group id
+```bash
+ docker run -it \
+  --user "$(id -u):$(id -g)" \
+```
+
+
+
