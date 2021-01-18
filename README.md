@@ -62,6 +62,11 @@ find . -name '*.txt' -exec mv '{}' /drive/images/ \;
 ```
 grip README.md --export readme.html
 ```
+## Untangle Terminal and Apps
+```
+spotify & disown
+pycharm-community . & disown
+```
 
 # Docker Helper
 
