@@ -58,6 +58,11 @@ find . -name '*.txt' -exec mv '{}' /drive/images/ \;
  ffmpeg -i foo.avi -vcodec h264 -an foo.mp4
 ```
 
+## Convert README.md to HTML
+```
+grip README.md --export readme.html
+```
+
 # Docker Helper
 
 ## apt-get
