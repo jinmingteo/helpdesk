@@ -58,6 +58,11 @@ find . -name '*.txt' -exec mv '{}' /drive/images/ \;
  ffmpeg -i foo.avi -vcodec h264 -an foo.mp4
 ```
 
+## Cut video
+```
+ffmpeg -i foo.mp4 -ss 00:00:00 -t 00:01:25 -async 1 foo_cut.mp4
+```
+
 ## Convert README.md to HTML
 ```
 grip README.md --export readme.html
