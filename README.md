@@ -69,8 +69,8 @@ grip README.md --export readme.html
 ```
 ## Untangle Terminal and Apps
 ```
-spotify & disown
-pycharm-community . & disown
+spotify &
+pycharm-community . &
 ```
 
 # Docker Helper
