@@ -47,10 +47,15 @@ git checkout BRANCHNAME
 ls --sort=size -lh
 ```
 
-## find and **MOVE** txt
+## Find and **MOVE** txt
 
 ```
 find . -name '*.txt' -exec mv '{}' /drive/images/ \;
+```
+
+## Copy and Rename images in a directory
+```
+for i in *.jpg; do scp -p "$i" "../images/MOT17_11_`echo "$i" `"; done
 ```
 
 ## Compress video
