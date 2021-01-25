@@ -69,7 +69,7 @@ grip README.md --export readme.html
 ```
 ## Untangle Terminal and Apps
 ```
-spotify &
+spotify & disown
 pycharm-community . & disown
 ```
 
