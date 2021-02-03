@@ -13,6 +13,9 @@
 ## Submodule update repos
 ```git submodule update --recursive --remote```
 
+## Change submodule to https from ssh way
+```git submodule sync```
+
 ## Add only modified files
 ```git add -u```
 
