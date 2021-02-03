@@ -7,6 +7,12 @@
 
 # Git Helper
 
+## New submodule in repo (Not cloned yet)
+```git submodule update --init --recursive```
+
+## Submodule update repos
+```git submodule update --recursive --remote```
+
 ## Add only modified files
 ```git add -u```
 
