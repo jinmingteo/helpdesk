@@ -5,6 +5,8 @@
 
 ## [Docker HelpDesk](#docker-helper)
 
+## [Python HelpDesk](#python-helper)
+
 # Git Helper
 
 ## New submodule in repo (Not cloned yet)
@@ -126,5 +128,9 @@ docker build -t myimage \
   --user "$(id -u):$(id -g)" \
 ```
 
+# Python Helper
 
-
+## Check site packages
+```
+python -m site
+```
