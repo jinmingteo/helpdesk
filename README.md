@@ -89,6 +89,16 @@ spotify & disown
 pycharm-community . & disown
 ```
 
+## Extract tar.gz or tar files (x for eXtract)
+```
+tar -xzvf archive.tar.gz
+```
+
+## Compress file to tar.gz or tar files (c for Compress)
+```
+tar -czvf archive.tar.gz /drive/persdet/ --exclude=/drive/persdet/junk --exclude=/drive/persdet/.cache
+```
+
 # Docker Helper
 
 ## apt-get
