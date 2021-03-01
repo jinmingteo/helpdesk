@@ -64,6 +64,17 @@ ls --sort=size -lh
 find . -name '*.txt' -exec mv '{}' /drive/images/ \;
 ```
 
+## Kill python
+
+```
+pkill -9 python
+```
+
+## Kill previous job
+```
+kill %%
+```
+
 ## Copy and Rename images in a directory
 ```
 for i in *.jpg; do scp -p "$i" "../images/MOT17_11_`echo "$i" `"; done
