@@ -8,6 +8,10 @@
 ## [Python HelpDesk](#python-helper)
 
 # Git Helper
+## Add submodule to existing repo
+```
+git submodule add git@github.com:jinmingteo/pytorch-image-models.git
+```
 
 ## New submodule in repo (Not cloned yet)
 ```git submodule update --init --recursive```
