@@ -90,6 +90,14 @@ for i in *.jpg; do scp -p "$i" "../images/MOT17_11_`echo "$i" `"; done
 ffmpeg -i foo.mp4 -ss 00:00:00 -t 00:01:25 -async 1 foo_cut.mp4
 ```
 
+## Crop video
+```
+ffmpeg -i in.mp4 -filter:v "crop=out_w:out_h:x:y" out.mp4
+```
+out_w is the width of the output rectangle
+out_h is the height of the output rectangle
+x and y specify the top left corner of the output rectangle
+
 ## Convert README.md to HTML
 ```
 grip README.md --export readme.html
