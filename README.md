@@ -168,3 +168,12 @@ docker build -t myimage \
 ```
 python -m site
 ```
+
+## Hyphen package issues
+```
+## Assuming you have a ./pytorch-image-models/classification_model.py with a Classifier_Model object/class
+
+import importlib
+classification_py_file = importlib.import_module("pytorch-image-models.classification_model")
+model = classification_py_file.Classifier_Model() #initialize the object in that file
+```
