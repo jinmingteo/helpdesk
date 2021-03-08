@@ -13,6 +13,13 @@
 git submodule add git@github.com:jinmingteo/pytorch-image-models.git
 ```
 
+## Remove submodule from existing repo
+
+1. Delete the relevant section from the .gitmodules file.
+2. ```git add .gitmodules```
+3. ```git rm --cached pytorch-image-models ```
+4. ```rm -rf .git/modules/pytorch-image-models ```
+
 ## New submodule in repo (Not cloned yet)
 ```git submodule update --init --recursive```
 
