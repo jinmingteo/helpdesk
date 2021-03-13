@@ -176,6 +176,12 @@ docker build -t myimage \
 python -m site
 ```
 
+## Create venv
+```
+virtualenv -p python3 venv/
+source venv/bin/activate
+```
+
 ## Hyphen package issues
 ```
 ## Assuming you have a ./pytorch-image-models/classification_model.py with a Classifier_Model object/class
