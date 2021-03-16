@@ -61,6 +61,12 @@ git fetch origin pull/ID/head:BRANCHNAME
 git checkout BRANCHNAME
 ```
 
+## Add tags for Version Control
+```
+git tag -a v2.0 beb9829 -m "Deployment v2"
+git push origin v2.0
+```
+
 # Linux Helper
 
 ## Sort file size
