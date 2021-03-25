@@ -8,6 +8,51 @@
 ## [Python HelpDesk](#python-helper)
 
 # Git Helper
+
+## New to Github 
+
+### Clone 
+```
+git clone https://github.com/jinmingteo/helpdesk.git
+```
+
+### Create new branch
+```
+git checkout -b new_branch_name
+```
+
+### Add edited files, commit and push
+#### 1 file
+```
+git add edited_file.py
+```
+
+#### all files
+```
+git add .
+```
+
+#### Add only modified files
+```
+git add -u
+```
+
+### Commit
+```
+git commit -m "[title] commit msg"
+```
+
+### Push
+#### master
+```
+git push origin master
+```
+
+#### sub-branch
+```
+git push origin new_branch_name
+```
+
 ## Add submodule to existing repo
 ```
 git submodule add git@github.com:jinmingteo/pytorch-image-models.git
@@ -28,9 +73,6 @@ git submodule add git@github.com:jinmingteo/pytorch-image-models.git
 
 ## Change submodule to https from ssh way
 ```git submodule sync```
-
-## Add only modified files
-```git add -u```
 
 ## Revert the file to its state in master
 ``` git checkout origin/master <filename> ```
