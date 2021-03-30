@@ -217,6 +217,13 @@ docker build -t myimage \
   --user "$(id -u):$(id -g)" \
 ```
 
+
+- run.sh required docker-compose environment variables
+```set -o allexport
+source docker-compose.env
+set +o allexport
+```
+
 # Python Helper
 
 ## Check site packages
