@@ -218,8 +218,9 @@ docker build -t myimage \
 ```
 
 
-- run.sh required docker-compose environment variables
-```set -o allexport
+## run.sh required docker-compose environment variables
+```
+set -o allexport
 source docker-compose.env
 set +o allexport
 ```
