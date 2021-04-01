@@ -98,6 +98,17 @@ git remote set-url origin <forked_repo>
 ```
 
 ## Fetch a remote PR into your local repo
+### Use branch method
+```
+git checkout -b heshameraqi-master master
+git pull git://github.com/heshameraqi/labelImg_OBB.git master
+
+git checkout master
+git merge --no-ff heshameraqi-master
+git push origin master
+```
+
+### Use the PR method (create a PR with the remote PR and your local PR)
 ```
 git fetch origin pull/ID/head:BRANCHNAME
 git checkout BRANCHNAME
