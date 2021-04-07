@@ -186,7 +186,7 @@ tar -xzvf archive.tar.gz
 
 ## Compress file to tar.gz or tar files (c for Compress)
 ```
-tar -czvf archive.tar.gz /drive/persdet/ --exclude=/drive/persdet/junk --exclude=/drive/persdet/.cache
+tar --use-compress-program="pigz --best --recursive" -cf CityPersons.tar.gz normal_no_rain/ rain/
 ```
 
 # Docker Helper
