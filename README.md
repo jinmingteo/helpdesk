@@ -7,6 +7,8 @@
 
 ## [Python HelpDesk](#python-helper)
 
+## [Pytorch HelpDesk](#pytorch-helper)
+
 # Git Helper
 
 ## New to Github 
@@ -256,4 +258,11 @@ source venv/bin/activate
 import importlib
 classification_py_file = importlib.import_module("pytorch-image-models.classification_model")
 model = classification_py_file.Classifier_Model() #initialize the object in that file
+```
+# Pytorch Helper
+
+## Pytorch>=1.6 models not compatible with PyTorch 1.1 or older version
+```
+# Go to pytorch 1.6 and save model in this way
+torch.save(model.state_dict(), path, _use_new_zipfile_serialization=False)
 ```
