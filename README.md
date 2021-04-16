@@ -259,6 +259,13 @@ import importlib
 classification_py_file = importlib.import_module("pytorch-image-models.classification_model")
 model = classification_py_file.Classifier_Model() #initialize the object in that file
 ```
+
+## Check what is in the module
+```
+from torchvision import transforms
+dir(transforms)
+```
+
 # Pytorch Helper
 
 ## Pytorch>=1.6 models not compatible with PyTorch 1.1 or older version
