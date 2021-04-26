@@ -266,6 +266,16 @@ from torchvision import transforms
 dir(transforms)
 ```
 
+## Debug console to check variables at that state
+```
+x = [1,2,3]
+i = 3
+try:
+    x[i] = 100 # code that failed 
+except:
+    import pdb; pdb.set_trace()
+```
+
 # Pytorch Helper
 
 ## Pytorch>=1.6 models not compatible with PyTorch 1.1 or older version
