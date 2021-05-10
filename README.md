@@ -93,7 +93,7 @@ git revert #hash of the commit you want to destroy
 git push origin master
 ```
 
-## remote repo
+## Forked / Remote repo
 ```
 git remote -v
 git remote set-url origin <forked_repo>
