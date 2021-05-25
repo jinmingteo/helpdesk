@@ -39,6 +39,11 @@ git add .
 git add -u
 ```
 
+#### Remove added files
+```
+git reset HEAD mmdet/ops/
+```
+
 ### Commit
 ```
 git commit -m "[title] commit msg"
