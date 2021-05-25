@@ -41,7 +41,7 @@ git add -u
 
 #### Remove added files
 ```
-git reset HEAD mmdet/ops/
+git reset HEAD edited_file.py
 ```
 
 ### Commit
