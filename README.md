@@ -203,6 +203,15 @@ tar --use-compress-program="pigz --best --recursive" -cf CityPersons.tar.gz norm
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
    make
 ```
+## CV2 / opencv-python
+```
+RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
+    ffmpeg \
+    libsm6 \
+    libxext6
+    
+RUN pip install opencv-python
+```
 
 ## X / QT display issue
 
