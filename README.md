@@ -65,6 +65,11 @@ git push origin new_branch_name
 git submodule add git@github.com:jinmingteo/pytorch-image-models.git
 ```
 
+## Force submodule to be updated whenever main repo git pull
+```
+git config --global submodule.recurse true
+```
+
 ## Remove submodule from existing repo
 
 1. Delete the relevant section from the .gitmodules file.
