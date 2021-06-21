@@ -92,7 +92,7 @@ git config --global submodule.recurse true
 ## Uncommit
 
 ### not pushed yet
-``` git reset HEAD-1 --soft``` 
+``` git reset --soft HEAD~1``` 
 
 ### pushed to master
 ``` 
