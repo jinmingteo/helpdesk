@@ -18,6 +18,11 @@
 git clone https://github.com/jinmingteo/helpdesk.git
 ```
 
+### Clone branch
+```
+git clone -b main_repo https://github.com/jinmingteo/pytorch-image-models.git
+```
+
 ### Create new branch
 ```
 git checkout -b new_branch_name
