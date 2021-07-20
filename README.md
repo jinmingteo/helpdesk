@@ -114,6 +114,17 @@ git remote -v
 git remote set-url origin <forked_repo>
 ```
 
+### Add multiple remote repos (suitable for HDD transfer)
+```
+git remote add a urla
+git remote add b urlb
+```
+
+### Update all remote repos 
+```
+git remote update
+```
+
 ## Fetch a remote PR into your local repo
 ### Use branch method
 ```
