@@ -219,6 +219,11 @@ tar --use-compress-program="pigz --best --recursive" -cf CityPersons.tar.gz norm
 
 # Docker Helper
 
+## Unable to start docker with ```systemctl enable docker```
+```
+sudo /etc/init.d/docker start
+```
+
 ## apt-get
 ```
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
