@@ -285,6 +285,11 @@ set +o allexport
 python -m site
 ```
 
+## Check all the linked packages that Python is reading from
+```
+pip list -v
+```
+
 ## Create venv
 ```
 virtualenv -p python3 venv/
