@@ -128,6 +128,11 @@ git remote add b urlb
 git remote update
 ```
 
+### Update one repo to another
+```
+git pull upstream master && git push origin master
+```
+
 ## Fetch a remote PR into your local repo
 ### Use branch method
 ```
