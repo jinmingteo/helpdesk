@@ -99,6 +99,9 @@ git config --global submodule.recurse true
 ### not pushed yet
 ``` git reset --soft HEAD~1``` 
 
+### check local commits
+``` git diff origin/master..HEAD ```
+
 ### pushed to master
 ``` 
 git checkout -b MyCommit (just in case)
