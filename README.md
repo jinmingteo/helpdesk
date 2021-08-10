@@ -293,6 +293,12 @@ set +o allexport
 python -m site
 ```
 
+## Build wheel on local package (setup.py)
+```
+# Remove the universal tag if you want to create a Pure-Python Wheel.
+python setup.py bdist_wheel --universal 
+```
+
 ## Check all the linked packages that Python is reading from
 ```
 pip list -v
