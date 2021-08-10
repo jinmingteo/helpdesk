@@ -156,6 +156,17 @@ git tag -a v2.0 beb9829 -m "Deployment v2"
 git push origin v2.0
 ```
 
+## Git Loggers
+### Full detailed of code changes
+```
+git log -p
+```
+
+### name and status only
+```
+git log --name-status
+```
+
 # Linux Helper
 
 ## Sort file size
