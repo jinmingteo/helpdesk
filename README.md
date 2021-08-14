@@ -344,6 +344,12 @@ try:
     x[i] = 100 # code that failed 
 except:
     import pdb; pdb.set_trace()
+    
+# alternatives to pdb
+import IPython ; IPython.embed() ; exit(1)
+
+Python 3.7 and above
+breakpoint()
 ```
 
 # Pytorch Helper
