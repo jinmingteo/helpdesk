@@ -111,6 +111,12 @@ git revert #hash of the commit you want to destroy
 git push origin master
 ```
 
+### revert without traces
+```
+git reset --hard HEAD~x will remove the last x commits from the current commit that the HEAD is at (basically the current status of your local repo)
+git push -f origin master
+```
+
 ## Forked / Remote repo
 ```
 git remote -v
