@@ -139,6 +139,11 @@ git remote update
 git pull upstream master && git push origin master
 ```
 
+### Remove permission changes (old mode: 100644; new mode:100755)
+```
+git config core.filemode false
+```
+
 ## Fetch a remote PR into your local repo
 ### Use branch method
 ```
