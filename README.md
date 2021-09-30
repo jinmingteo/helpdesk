@@ -227,6 +227,11 @@ out_h is the height of the output rectangle
 x and y specify the top left corner of the output rectangle
 ```
 
+## Lightweight image viewer
+```
+feh .
+```
+
 ## Convert README.md to HTML
 ```
 grip README.md --export readme.html
