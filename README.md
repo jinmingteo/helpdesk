@@ -320,6 +320,11 @@ set +o allexport
 python -m site
 ```
 
+## CPP compilation errors; common.h:124:10: fatal error: Python.h: No such file or directory
+```
+sudo apt-get install python3-dev
+```
+
 ## Build wheel on local package (setup.py)
 ```
 # Remove the universal tag if you want to create a Pure-Python Wheel.
