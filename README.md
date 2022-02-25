@@ -9,6 +9,8 @@
 
 ## [Pytorch HelpDesk](#pytorch-helper)
 
+## [tmux HelpDesk](#tmux-helper)
+
 # Git Helper
 
 ## New to Github 
@@ -379,4 +381,16 @@ breakpoint()
 ```
 # Go to pytorch 1.6 and save model in this way
 torch.save(model.state_dict(), path, _use_new_zipfile_serialization=False)
+```
+
+# tmux Helper
+
+## Basic tmux panes
+```
+tmux
+ctrl + b + % (vertical split)
+ctrl + b + " (horizontal split)
+ctrl + b + -> (move to pane to the respective arrowkey)
+ctrl + b + x (kill pane)
+ctrl + b + ; (go to last active pane)
 ```
