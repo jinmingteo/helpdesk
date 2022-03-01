@@ -393,4 +393,5 @@ ctrl + b + " (horizontal split)
 ctrl + b + -> (move to pane to the respective arrowkey)
 ctrl + b + x (kill pane)
 ctrl + b + ; (go to last active pane)
+ctrl + b + c (create another tab)
 ```
