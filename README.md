@@ -169,6 +169,21 @@ git tag -a v2.0 beb9829 -m "Deployment v2"
 git push origin v2.0
 ```
 
+## Amend Commits
+```
+Refer to: https://confluence.atlassian.com/bitbucketserverkb/how-do-you-make-changes-on-a-specific-commit-779171729.html
+git rebase -i <Earlier Commit Hash>
+Editor will pop up; change "pick" to "edit" for the commits that you would like to change
+Examples
+git commit --amend --author="jinmingteo <jinmingteo95@gmail.com>" --no-edit 
+git commit --amend -m "New Commit Message"
+git log
+git rebase --continue (confirm your edits and move on to the next commit/edit)
+
+After all the rebase / amendments
+git push origin main -f (save the changes)
+```
+
 ## Git Loggers
 ### Full detailed of code changes
 ```
