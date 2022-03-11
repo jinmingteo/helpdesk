@@ -297,6 +297,12 @@ RUN pip install opencv-python
  xhost +local:docker && docker run --rm -e "DISPLAY=${DISPLAY}" -v "/tmp/.X11-unix:/tmp/.X11-unix:rw" <repo>
 ```
 
+## Unable to write to file </torch_xxx>
+```
+Either increase shm-size or --ipc=host (will get your sys shm)
+docker run -it --gpus all -d -v $dir:/$dir -w $dir --shm-size=256m --ipc=host --expose 8416 -p 8416:8416 mmocr
+```
+
 ## No 'rights' to docker images / Permission Issues
 
 - Dockerfile to receive arguments, and creates a new user called “user” (put at end of Dockerfile)
