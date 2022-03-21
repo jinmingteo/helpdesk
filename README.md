@@ -113,6 +113,17 @@ git revert #hash of the commit you want to destroy
 git push origin master
 ```
 
+### edit pushed commits (not recommended if proj has other collaborators)
+```
+git reset --soft HEAD~1 (reset to prev commit)
+git stash (stash prev commit code)
+git push -f origin master (push to ensure master is in prev commit)
+git stash pop (get prev commit code)
+git add (add other changes)
+git commit 
+git push origin master
+```
+
 ### revert without traces
 ```
 git reset --hard HEAD~x will remove the last x commits from the current commit that the HEAD is at (basically the current status of your local repo)
