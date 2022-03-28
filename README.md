@@ -195,6 +195,15 @@ After all the rebase / amendments
 git push origin main -f (save the changes)
 ```
 
+## Rebase fork repo back to main repo
+```
+git remote add upstream https://github.com/rwightman/pytorch-image-models.git
+(git fetch upstream if pull doesn't work)
+git pull upstream master
+git reset --hard upstream/master
+git push origin master --force
+```
+
 ## Git Loggers
 ### Full detailed of code changes
 ```
