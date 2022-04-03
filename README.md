@@ -7,6 +7,8 @@
 
 ## [Python HelpDesk](#python-helper)
 
+## [JupyterNotebook HelpDesk](#jupyter-helper)
+
 ## [Pytorch HelpDesk](#pytorch-helper)
 
 ## [tmux HelpDesk](#tmux-helper)
@@ -415,6 +417,18 @@ import IPython ; IPython.embed() ; exit(1)
 Python 3.7 and above
 breakpoint()
 ```
+
+# Jupyter Helper
+
+## Stop Jupyter notebook
+```
+jupyter notebook stop <PORT_NUM>
+if it doesn't work 
+jupyter notebook list
+lsof -n i4TCP:<PORT_NUM>
+kill -9 <PID>
+```
+
 
 # Pytorch Helper
 
