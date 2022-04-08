@@ -450,3 +450,13 @@ ctrl + b + x (kill pane)
 ctrl + b + ; (go to last active pane)
 ctrl + b + c (create another tab)
 ```
+
+## open tmux when fish is prompted
+```
+Add new config file ~/.config/fish/conf.d/tmux.fish
+if not set -q TMUX
+    set -g TMUX tmux new-session -d -s base
+    eval $TMUX
+    tmux attach-session -d -t base
+end
+```
