@@ -79,6 +79,16 @@ git submodule add git@github.com:jinmingteo/pytorch-image-models.git
 git config --global submodule.recurse true
 ```
 
+## git config for local
+```
+# check global and local list
+git config --list 
+# amend local 
+git config user.email jinmingteo95@gmail.com 
+# amend global
+git config --global user.email jinmingteo95@gmail.com
+```
+
 ## Remove submodule from existing repo
 
 1. Delete the relevant section from the .gitmodules file.
