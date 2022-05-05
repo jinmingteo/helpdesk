@@ -301,6 +301,11 @@ tar -xzvf archive.tar.gz
 tar --use-compress-program="pigz --best --recursive" -cf CityPersons.tar.gz normal_no_rain/ rain/
 ```
 
+## Download file on Google Drive (GDrive)
+```
+wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=<FILEID>' -O <FILENAME>
+```
+
 # Docker Helper
 
 ## Unable to start docker with ```systemctl enable docker```
