@@ -241,6 +241,11 @@ ls --sort=size -lh
 find . -name '*.txt' -exec mv '{}' /drive/images/ \;
 ```
 
+## Get nohup / other PID
+```
+ps -ef | grep nohup
+```
+
 ## Kill python
 
 ```
