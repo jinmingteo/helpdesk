@@ -240,6 +240,11 @@ ls --sort=size -lh
 ```
 find . -name '*.txt' -exec mv '{}' /drive/images/ \;
 ```
+## Check PORTS that are in used (IPv4/IPv6)
+```
+sudo lsof -nP -i4TCP:$PORT | grep LISTEN
+```
+
 
 ## Get nohup / other PID
 ```
