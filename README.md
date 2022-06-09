@@ -235,6 +235,12 @@ git log --name-status
 ls --sort=size -lh
 ```
 
+## Get count (num of files) in the directory
+```
+ls images/ (will lag)
+ls images/ | wc -l
+```
+
 ## Find and **MOVE** txt
 
 ```
