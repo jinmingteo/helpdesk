@@ -241,6 +241,11 @@ ls images/ (will lag)
 ls images/ | wc -l
 ```
 
+## Get directory size
+```
+du -sh /DATA/jin
+```
+
 ## Find and **MOVE** txt
 
 ```
