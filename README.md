@@ -456,6 +456,11 @@ breakpoint()
 
 # Jupyter Helper
 
+## Default Jupyter notebook startup
+```
+nohup jupyter notebook --no-browser --ip=0.0.0.0 --port 8426 --allow-root > logsfile.logs --NotebookApp.token='' --NotebookApp.password='' --NotebookApp.iopub_data_rate_limit=10000000 & disown
+```
+
 ## Stop Jupyter notebook
 ```
 jupyter notebook stop <PORT_NUM>
