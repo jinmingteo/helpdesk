@@ -17,6 +17,12 @@
 
 ## New to Github 
 
+### Set up global .gitignore
+```
+Get .gitignore from this repo (covers Python, Pycharm & VSCode)
+git config --global core.excludesfile '~/.gitignore'
+```
+
 ### Clone 
 ```
 git clone https://github.com/jinmingteo/helpdesk.git
