@@ -268,6 +268,11 @@ sudo lsof -nP -i4TCP:$PORT | grep LISTEN
 ps -ef | grep nohup
 ```
 
+## Get all nvidia-smi processes and respective directory
+```
+sudo pwdx `nvidia-smi -q -x | grep pid | sed -e 's/<pid>//g' -e 's/<\/pid>//g' -e 's/^[[:space:]]*//'`
+```
+
 ## Kill python
 
 ```
