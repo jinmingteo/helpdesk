@@ -257,11 +257,17 @@ du -sh /DATA/jin
 ```
 find . -name '*.txt' -exec mv '{}' /drive/images/ \;
 ```
+
+## peek file (top/bottom 10 lines)
+```
+head -10 image_list.txt
+tail -10 image_list.txt
+```
+
 ## Check PORTS that are in used (IPv4/IPv6)
 ```
 sudo lsof -nP -i4TCP:$PORT | grep LISTEN
 ```
-
 
 ## Get nohup / other PID
 ```
