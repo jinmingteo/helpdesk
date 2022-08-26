@@ -483,7 +483,7 @@ nohup jupyter notebook --no-browser --ip=0.0.0.0 --port 8426 --allow-root > logs
 jupyter notebook stop <PORT_NUM>
 if it doesn't work 
 jupyter notebook list
-lsof -n i4TCP:<PORT_NUM>
+lsof -n i4TCP:<PORT_NUM> / ps aux 
 kill -9 <PID>
 ```
 
