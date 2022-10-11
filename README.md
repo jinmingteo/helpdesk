@@ -422,10 +422,16 @@ python -m site
 ```
 sudo apt-get install python3-dev
 ```
+## Cmake errors / upgrade 
+```
+# apt-get install might not give the latest version.
+pip install cmake --upgrade
+```
 
 ## Build wheel on local package (setup.py)
 ```
 # Remove the universal tag if you want to create a Pure-Python Wheel.
+pip install wheel
 python setup.py bdist_wheel --universal 
 ```
 
