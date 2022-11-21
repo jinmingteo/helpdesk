@@ -428,6 +428,11 @@ kubectl logs -f serviceexample-5696958c86-4t5kx -n <namespace>
 kubectl logs -f serviceexample-5696958c86-4t5kx -c serviceexample -n <namespace>
 ```
 
+## Check what is in the node
+```
+kubectl get pods -o wide -n intuition --field-selector spec.nodeName=<env>-<namespace>-node-202211190856-1617-z100   
+```
+
 # Python Helper
 
 ## Check site packages
