@@ -411,6 +411,21 @@ source docker-compose.env
 set +o allexport
 ```
 
+# Kubernetes Helper
+```
+kubectl ingress pods -n <namespace>
+kubectl get pods -n <namespace> 
+kubectl get deploy -n <namespace> serviceexample
+
+kubectl describe pods -n <namespace> serviceexample-5696958c86-4t5kx
+kubectl describe deploy -n <namespace> serviceexample
+
+## Replicaset
+kubectl logs -f serviceexample-5696958c86-4t5kx -n <namespace>
+## combined output
+kubectl logs -f serviceexample-5696958c86-4t5kx -c serviceexample -n <namespace>
+```
+
 # Python Helper
 
 ## Check site packages
