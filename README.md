@@ -5,6 +5,8 @@
 
 ## [Docker HelpDesk](#docker-helper)
 
+## [Kubernetes HelpDesk](#kubernetes-helper)
+
 ## [Python HelpDesk](#python-helper)
 
 ## [JupyterNotebook HelpDesk](#jupyter-helper)
