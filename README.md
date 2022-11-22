@@ -483,6 +483,12 @@ from torchvision import transforms
 dir(transforms)
 ```
 
+## Check where is the module from
+```
+import torch
+torch.__file__
+```
+
 ## Debug console to check variables at that state
 ```
 x = [1,2,3]
