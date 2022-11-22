@@ -421,13 +421,21 @@ kubectl get deploy -n <namespace> serviceexample
 
 kubectl describe pods -n <namespace> serviceexample-5696958c86-4t5kx
 kubectl describe deploy -n <namespace> serviceexample
+kubectl describe node <name> -n <namespace>
+```
 
 ## Replicaset
+```
 kubectl logs -f serviceexample-5696958c86-4t5kx -n <namespace>
+```
+
 ## combined output
+```
 kubectl logs -f serviceexample-5696958c86-4t5kx -c serviceexample -n <namespace>
+```
 
 ## get nodes type / description
+```
 kubectl get nodes -o wide -L beta.kubernetes.io/arch -L beta.kubernetes.io/os -L beta.kubernetes.io/instance-type -L kops.k8s.io/instancegroup -n <namespace>
 ```
 
