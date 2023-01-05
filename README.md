@@ -368,6 +368,13 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
 RUN pip install opencv-python
 ```
 
+## Commit (hacky; only use for quick testing
+```
+docker commit [OPTIONS] CONTAINER [REPOSITORY[:TAG]]
+docker commit e5ef0 helloworld-container
+docker push helloworld-container
+```
+
 ## X / QT display issue
 
 ```
