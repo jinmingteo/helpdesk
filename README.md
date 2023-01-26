@@ -539,6 +539,12 @@ lsof -n i4TCP:<PORT_NUM> / ps aux
 kill -9 <PID>
 ```
 
+# Tensorboard
+
+## Default Tensorboard startup
+```
+nohup tensorboard --logdir=. --port=8417 --host=0.0.0.0 & disown
+```
 
 # Pytorch Helper
 
