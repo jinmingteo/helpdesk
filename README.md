@@ -235,7 +235,7 @@ git log -p
 git log --name-status
 ```
 
-# Linux Helper
+# Mac / Linux Helper
 
 ## Sort file size
 
@@ -264,6 +264,12 @@ find . -name '*.txt' -exec mv '{}' /drive/images/ \;
 ```
 head -10 image_list.txt
 tail -10 image_list.txt
+```
+
+## diff directories
+```
+# exlude .git directory
+diff --exclude=.git -qr folder/ folder-old/
 ```
 
 ## Check PORTS that are in used (IPv4/IPv6)
