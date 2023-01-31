@@ -1,7 +1,7 @@
 # Directory
 ## [Git HelpDesk](#git-helper)
 
-## [Linux HelpDesk](#linux-helper)
+## [Mac Linux HelpDesk](#mac-linux-helper)
 
 ## [Docker HelpDesk](#docker-helper)
 
@@ -235,7 +235,7 @@ git log -p
 git log --name-status
 ```
 
-# Mac / Linux Helper
+# Mac Linux Helper
 
 ## Sort file size
 
