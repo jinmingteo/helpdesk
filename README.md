@@ -224,6 +224,15 @@ git reset --hard upstream/master
 git push origin master --force
 ```
 
+## Rebase / Update old branch with master
+```
+# get latest master, go to branch and rebase to it.
+git checkout master
+git pull
+git checkout custom-branch
+git rebase master
+```
+
 ## Git Loggers
 ### Full detailed of code changes
 ```
