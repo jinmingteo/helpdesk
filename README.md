@@ -468,6 +468,12 @@ kubectl get pods -o wide -n intuition --field-selector spec.nodeName=<env>-<name
 
 # Python Helper
 
+## List comprehension
+```
+[x+1 if x >= 45 else x+5 for x in xs]
+[x+1 for x in xs if x>=45]
+```
+
 ## Check site packages
 ```
 python -m site
