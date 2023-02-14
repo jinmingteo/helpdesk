@@ -231,6 +231,7 @@ git checkout master
 git pull
 git checkout custom-branch
 git rebase master
+git push origin -f custom-branch
 ```
 
 ## Git Loggers
