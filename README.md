@@ -205,9 +205,15 @@ git push origin v2.0
 Refer to: https://confluence.atlassian.com/bitbucketserverkb/how-do-you-make-changes-on-a-specific-commit-779171729.html
 git rebase -i <Earlier Commit Hash>
 Editor will pop up; change "pick" to "edit" for the commits that you would like to change
+
 Examples
 git commit --amend --author="jinmingteo <jinmingteo95@gmail.com>" --no-edit 
 git commit --amend -m "New Commit Message"
+
+# just editing files
+git add -u
+git commit --amend --no-edit
+
 git log
 git rebase --continue (confirm your edits and move on to the next commit/edit)
 
