@@ -150,6 +150,24 @@ git reset --hard HEAD~x will remove the last x commits from the current commit t
 git push -f origin master
 ```
 
+### squash commmits
+```
+# goes back 3 commits
+git rebase -i HEAD~5 
+
+# proceeds to interactive vim mode
+# fixup the commits to initial commit / following command change pick to fixup
+:%s/pick/fixup/g 
+
+should look something this
+pick commit_1 / edit commit_1 / reword commit_1
+fixup commit_2
+fixup commit_3
+
+git rebase --continue
+git push origin master -f 
+```
+
 ## Forked / Remote repo
 ```
 git remote -v
