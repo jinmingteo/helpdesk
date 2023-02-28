@@ -40,6 +40,11 @@ git clone -b main_repo https://github.com/jinmingteo/pytorch-image-models.git
 git checkout -b new_branch_name
 ```
 
+### Rename branch
+```
+git branch -m <newname>
+```
+
 ### Add edited files, commit and push
 #### 1 file
 ```
