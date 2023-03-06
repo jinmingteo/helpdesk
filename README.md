@@ -337,6 +337,12 @@ pkill -9 python
 kill %%
 ```
 
+## Copy directory with symbolic link
+```
+// -r is recursive; -l is --dereference
+cp -R -L . /DATA/output 
+```
+
 ## Copy and Rename images in a directory
 ```
 for i in *.jpg; do scp -p "$i" "../images/MOT17_11_`echo "$i" `"; done
