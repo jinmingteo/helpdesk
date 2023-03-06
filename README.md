@@ -429,7 +429,7 @@ docker push helloworld-container
 ## Unable to write to file </torch_xxx>
 ```
 Either increase shm-size or --ipc=host (will get your sys shm)
-docker run -it --gpus all -d -v $dir:/$dir -w $dir --shm-size=256m --ipc=host --expose 8416 -p 8416:8416 mmocr
+docker run -it --gpus all --name mmocr -d -v $dir:/$dir -w $dir --shm-size=256m --ipc=host --expose 8416 -p 8416:8416 mmocr
 ```
 
 ## No 'rights' to docker images / Permission Issues
