@@ -537,6 +537,11 @@ python setup.py bdist_wheel --universal
 pip list -v
 ```
 
+## pip install locally (assuming there is setup.py on directory)
+```
+pip install -e .
+```
+
 ## Create venv
 ```
 virtualenv -p python3 venv/
