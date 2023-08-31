@@ -82,6 +82,12 @@ git push origin master
 git push origin new_branch_name
 ```
 
+#### rename branch
+```
+git branch -m <old_branch> <new_branch>
+git branch -m feat/yoyoyo feature/yoyoyo
+```
+
 ## Add submodule to existing repo
 ```
 git submodule add git@github.com:jinmingteo/pytorch-image-models.git
