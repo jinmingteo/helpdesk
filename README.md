@@ -554,6 +554,11 @@ virtualenv -p python3 venv/
 source venv/bin/activate
 ```
 
+## Clone conda environment
+```
+conda create --name cloned_env --clone original_env
+```
+
 ## Hyphen package issues
 ```
 ## Assuming you have a ./pytorch-image-models/classification_model.py with a Classifier_Model object/class
