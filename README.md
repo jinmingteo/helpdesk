@@ -612,6 +612,13 @@ lsof -n i4TCP:<PORT_NUM> / ps aux
 kill -9 <PID>
 ```
 
+## Add conda env to notebook
+```
+<at_my_env>
+conda install -c anaconda ipykernel
+python -m ipykernel install --user --name=<at_my_env>
+```
+
 # Tensorboard
 
 ## Default Tensorboard startup
