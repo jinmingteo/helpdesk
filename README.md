@@ -444,6 +444,18 @@ Either increase shm-size or --ipc=host (will get your sys shm)
 docker run -it --gpus all --name mmocr -d -v $dir:/$dir -w $dir --shm-size=256m --ipc=host --expose 8416 -p 8416:8416 mmocr
 ```
 
+## RuntimeError: DataLoader worker (pid 1124261) is killed by signal: Bus error. It is possible that dataloader's workers are out of shared memory. Please try to raise your shared memory limit.
+```
+# check /dev/shm (usually should not be full)
+df -h
+
+# check which program is hogging /dev/shm (have to stop; deleting files won't work if process is using)
+lsof /dev/shm (processes that are using /dev/shm)
+
+# cached / files in the directory
+ls -lh /dev/shm
+```
+
 ## No 'rights' to docker images / Permission Issues
 
 - Dockerfile to receive arguments, and creates a new user called “user” (put at end of Dockerfile)
