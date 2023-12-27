@@ -481,6 +481,10 @@ docker build -t myimage \
   --user "$(id -u):$(id -g)" \
 ```
 
+- Run Docker as root
+```
+docker exec -u 0 -it mycontainer bash
+```
 
 ## run.sh required docker-compose environment variables
 ```
