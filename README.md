@@ -672,3 +672,15 @@ if not set -q TMUX
     tmux attach-session -d -t base
 end
 ```
+
+# screen Helper
+```
+screen -ls
+screen -S {name}
+
+## get out of screen
+ctrl + a + d
+
+## resume screen
+screen -r {name}
+```
