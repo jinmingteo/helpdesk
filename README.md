@@ -356,7 +356,9 @@ for i in *.jpg; do scp -p "$i" "../images/MOT17_11_`echo "$i" `"; done
 
 ## Compress video
 ```
+## where 0 is lossless, 23 is default, and 51 is worst possible.
  ffmpeg -i foo.avi -vcodec h264 -an foo.mp4
+ ffmpeg -i video_12_02_2024.mp4 -vcodec libx264 -crf 24 12_02_2024.mp4
 ```
 
 ## Cut video
