@@ -354,6 +354,11 @@ cp -R -L . /DATA/output
 for i in *.jpg; do scp -p "$i" "../images/MOT17_11_`echo "$i" `"; done
 ```
 
+## Convert mp3 to wav
+```
+ffmpeg -i {mp3} -acodec pcm_s16le -ar 8000 {wav_file}
+```
+
 ## Compress video
 ```
 ## where 0 is lossless, 23 is default, and 51 is worst possible.
