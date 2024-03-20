@@ -619,6 +619,17 @@ Python 3.7 and above
 breakpoint()
 ```
 
+## Check text diff on jupyter notebook
+```
+import diff_match_patch as dmp_module
+from IPython.display import display, HTML
+
+dmp = dmp_module.diff_match_patch()
+diff = dmp.diff_main("Hello World.", "Goodbye World.")
+dmp.diff_cleanupSemantic(diff)
+display(HTML(dmp.diff_prettyHtml(diff)))
+```
+
 # Jupyter Helper
 
 ## Default Jupyter notebook startup
