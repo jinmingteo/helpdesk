@@ -299,6 +299,11 @@ ls images/ | wc -l
 du -sh /DATA/jin
 ```
 
+## Get directory size recursively
+```
+du -h --max-depth=1 /DATA2/jin | sort -rh
+```
+
 ## Find and **MOVE** txt
 
 ```
