@@ -316,6 +316,11 @@ head -10 image_list.txt
 tail -10 image_list.txt
 ```
 
+## kill all tail programs
+```
+ps aux | grep '[t]ail' | awk '{print $2}' | xargs kill
+```
+
 ## diff directories
 ```
 # exlude .git directory
