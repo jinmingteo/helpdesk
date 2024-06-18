@@ -524,6 +524,8 @@ kubectl describe node <name> -n <namespace>
 ## Replicaset
 ```
 kubectl logs -f serviceexample-5696958c86-4t5kx -n <namespace>
+## trace how previous container died
+kubectl logs -f serviceexample-5696958c86-4t5kx -f <release_name> --previous -n <namespace> 
 ```
 
 ## combined output
