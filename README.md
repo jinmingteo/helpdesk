@@ -514,7 +514,7 @@ set +o allexport
 ```
 kubectl ingress pods -n <namespace>
 kubectl get pods -n <namespace> 
-kubectl get deploy -n <namespace> serviceexample
+kubectl get deploy -n <namespace> serviceexample -o wide
 
 kubectl describe pods -n <namespace> serviceexample-5696958c86-4t5kx
 kubectl describe deploy -n <namespace> serviceexample
