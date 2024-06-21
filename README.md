@@ -519,6 +519,9 @@ kubectl get deploy -n <namespace> serviceexample -o wide
 kubectl describe pods -n <namespace> serviceexample-5696958c86-4t5kx
 kubectl describe deploy -n <namespace> serviceexample
 kubectl describe node <name> -n <namespace>
+
+kubectl get nodes --show-labels | grep g54x
+kubectl top nodes -l spr-cluster=g54x
 ```
 
 ## Replicaset
