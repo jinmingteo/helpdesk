@@ -522,6 +522,9 @@ kubectl describe node <name> -n <namespace>
 
 kubectl get nodes --show-labels | grep g54x
 kubectl top nodes -l spr-cluster=g54x
+
+# get generic nodeSelector
+kubectl get pods -n <namespace> --field-selector=status.phase=Running -o custom-columns=POD:.metadata.name,NODE:.spec.nodeSelector | grep generic 
 ```
 
 ## Replicaset
