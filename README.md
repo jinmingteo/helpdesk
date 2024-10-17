@@ -524,7 +524,16 @@ kubectl get nodes --show-labels | grep g54x
 kubectl top nodes -l spr-cluster=g54x
 
 # get generic nodeSelector
-kubectl get pods -n <namespace> --field-selector=status.phase=Running -o custom-columns=POD:.metadata.name,NODE:.spec.nodeSelector | grep generic 
+kubectl get pods -n <namespace> --field-selector=status.phase=Running -o custom-columns=POD:.metadata.name,NODE:.spec.nodeSelector | grep generic
+
+# check for pdb
+kubectl get pdb -A | grep <pod_name>
+
+# check for nginx
+kubectl get pods -A | grep -e nginx
+
+# check for ingress
+kubectl get pods ing -A
 ```
 
 ## Replicaset
