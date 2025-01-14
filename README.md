@@ -45,6 +45,11 @@ git checkout -b new_branch_name
 git branch -m <newname>
 ```
 
+### Remove old / merged branches
+```
+git branch --merged | grep -v \* | xargs git branch -D 
+```
+
 ### Add edited files, commit and push
 #### 1 file
 ```
