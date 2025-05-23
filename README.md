@@ -614,6 +614,12 @@ source venv/bin/activate
 conda create --name cloned_env --clone original_env
 ```
 
+## Conda into jupyter lab
+```
+conda activate jin
+python -m ipykernel install --user --name jin  --display-name "jin"
+```
+
 ## Hyphen package issues
 ```
 ## Assuming you have a ./pytorch-image-models/classification_model.py with a Classifier_Model object/class
