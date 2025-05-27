@@ -706,6 +706,12 @@ nohup tensorboard --logdir=. --port=8417 --host=0.0.0.0 & disown
 torch.save(model.state_dict(), path, _use_new_zipfile_serialization=False)
 ```
 
+# Stress Testing Helper
+```
+pip install locust
+locust -f test.py
+```
+
 # tmux Helper
 
 ## Basic tmux panes
