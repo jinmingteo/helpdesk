@@ -544,6 +544,7 @@ kubectl get pods ing -A
 ## Replicaset
 ```
 kubectl logs -f serviceexample-5696958c86-4t5kx -n <namespace>
+kubectl logs -n llm -f -l app=<appname> --max-log-requests 10
 ## trace how previous container died
 kubectl logs -f serviceexample-5696958c86-4t5kx -f <release_name> --previous -n <namespace> 
 ```
