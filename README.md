@@ -726,6 +726,16 @@ ctrl + b + ; (go to last active pane)
 ctrl + b + c (create another tab)
 ```
 
+## Setting up tmux 
+```
+put it in ~/.tmux.conf
+# Enable mouse control (clickable windows, panes, and resizable panes)
+set -g mouse on
+
+# Increase scrollback buffer capacity (e.g., 500,000 lines)
+set -g history-limit 500000
+```
+
 ## open tmux when fish is prompted
 ```
 Add new config file ~/.config/fish/conf.d/tmux.fish
